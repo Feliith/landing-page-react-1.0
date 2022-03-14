@@ -1,0 +1,15 @@
+
+:root {
+    --primary: #00a4d6;
+    --font-primary: #fff;
+}
+
+.portfolio-btn {
+    background: var(--primary);
+    color: var(--font-primary);
+    padding: 8px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 300;
+}
