@@ -1,9 +1,15 @@
 
 .home {
     background: linear-gradient(#000, transparent 30%);
+    color: #fff;
     width: 100%;
-    height: 600px;
+    height: 620px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 32px;
 }
 
 .home-bg {
@@ -13,6 +19,94 @@
     background: url(../../images/background.jpg);
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     z-index: -1;
     filter: brightness(60%);
+}
+
+.home-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.home-text-bg {
+    background: #000000ce;
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    z-index: -1;
+    filter: blur(120px);
+}
+
+.home-text h2 {
+    font-weight: 400;
+    font-size: 1.8em;
+}
+
+.home-text h1 {
+    font-size: 4em;
+    font-weight: 900;
+    line-height: 50px;
+}
+
+.home-text h3 {
+    color: #d6d6d6;
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+.home-text .portfolio-btn {
+    margin-top: 40px;
+}
+
+.home-arrows {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 28px;
+    animation: UpDown alternate infinite 1s;
+}
+
+.home-arrows i {
+    color: #fff;
+    font-size: 38px;
+}
+
+@keyframes UpDown {
+    from {
+        transform: translateY(0);
+    } to {
+        transform: translateY(8px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .home {
+        height: 740px;
+    }
+    .home-text h2 {
+        font-size: 1.6em;
+    }
+    .home-text h1 {
+        font-size: 3em;
+        line-height: 40px;
+    }
+    .home-arrows {
+        bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .home-text h2 {
+        font-size: 1.4em;
+    }
+    .home-text h1 {
+        font-size: 2.4em;
+    }
+    .home-text h3 {
+        font-size: 1.2em;
+    }
 }

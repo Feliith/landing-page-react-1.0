@@ -63,6 +63,15 @@
     text-decoration: none;
 }
 
+.nav-link {
+    transition: .3s;
+    list-style: none;
+}
+
+.nav-link:hover {
+    transform: scale(.94);
+}
+
 @media screen and (max-width: 1000px) {
     .navbar .portfolio-btn {
         display: none;
@@ -116,11 +125,5 @@
     }
     .nav-link a:hover {
         background: #000;
-    }
-    .portfolio-btn {
-        padding: 20px 80px;
-        font-size: 22px;
-        font-weight: 400;
-        margin-top: 20px;
     }
 }

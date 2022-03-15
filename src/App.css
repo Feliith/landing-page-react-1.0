@@ -12,4 +12,10 @@
     text-decoration: none;
     font-size: 19px;
     font-weight: 300;
+    transition: .3s;
+}
+
+.portfolio-btn:hover {
+    filter: brightness(80%);
+    -webkit-filter: brightness(80%);
 }
