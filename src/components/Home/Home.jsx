@@ -3,6 +3,7 @@ import './Home.css'
 import React from 'react'
 
 import PortfolioBtn from '../PortfolioBtn'
+import Contacts from '../Contacts'
 
 const Home = () => {
   return (
@@ -20,6 +21,8 @@ const Home = () => {
       <a href="#gallery" className="home-arrows">
         <i className="fa-solid fa-angles-down"></i>
       </a>
+
+      <Contacts class="home-contacts" />
     </div>
   )
 }

@@ -19,3 +19,19 @@
     filter: brightness(80%);
     -webkit-filter: brightness(80%);
 }
+
+.contact-link {
+    color: #fff;
+    font-size: 26px;
+    opacity: .7;
+    transition: .3s;
+}
+
+.contact-link:hover {
+    transform: scale(1.1);
+}
+
+.atom {
+    position: absolute;
+    z-index: -1;
+}

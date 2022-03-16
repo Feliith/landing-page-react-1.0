@@ -15,28 +15,34 @@ const Navbar = () => {
 
     const [scrolled, setScroll] = useState(false)
 
+    window.onscroll = () => {
+        if (window.scrollY > 120) {
+            setScroll(true)
+        } else {
+            setScroll(false)
+        }
+    }
+
     return (
-        <div className={scrolled ? 'navbar' : 'navbar on'}>
+        <div className={scrolled ? 'navbar on' : 'navbar'}>
             <a href="" className="nav-logo">
                 <i className='fa-brands fa-react'></i>
                 <p>Felipe R.</p>
             </a>
             <i className='fa fa-bars' id='nav-burger' onClick={handleClick}></i>
-            <div className={clicked ? 'nav-menu on' : 'nav-menu'} onClick={handleClick}>
+            <ul className={clicked ? 'nav-menu on' : 'nav-menu'} onClick={handleClick}>
                 <i className='fa fa-times' id='nav-close'></i>
                 {MenuLinks.map((item, index) => {
                     return (
-                        <ul className="nav-links">
-                            <li className="nav-link">
-                                <a href={item.to}>
-                                    {item.title}
-                                </a>
-                            </li>
-                        </ul>
+                        <li key={index} className="nav-link">
+                            <a href={item.to}>
+                                {item.title}
+                            </a>
+                        </li>
                     )
                 })}
                 <PortfolioBtn />
-            </div>
+            </ul>
         </div>
     )
 }
