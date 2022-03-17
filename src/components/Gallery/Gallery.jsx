@@ -1,7 +1,7 @@
 import './Gallery.css'
 import React from 'react'
 
-import Atom from '../../images/atom.png'
+import Atom from '../Atom'
 
 const Projects = [
     {
@@ -49,8 +49,8 @@ const Gallery = () => {
 
             <a href="https://portfolio-puro.netlify.app/" target="_blank" className="portfolio-link">Ver todos os projetos &gt;</a>
 
-            <img src={Atom} className="atom one-gallery" />
-            <img src={Atom} className="atom two-gallery" />
+            <Atom class="atom one-gallery" />
+            <Atom class="atom two-gallery" />
         </div>
     )
 }

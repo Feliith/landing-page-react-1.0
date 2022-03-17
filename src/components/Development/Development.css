@@ -1,0 +1,133 @@
+
+#dev {
+    background: #acacac5d;
+    width: 100%;
+    height: 680px;
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#dev > h3 {
+    color: var(--primary);
+    font-size: 20px;
+    font-weight: 500;
+    filter: brightness(40%);
+    -webkit-filter: brightness(40%);
+    margin-top: 36px;
+    margin-bottom: 20px;
+}
+
+.dev-info {
+    max-width: 800px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.dev-info > h2 {
+    font-weight: 700;
+}
+
+.dev-info > h2:nth-child(2) {
+    color: var(--secondary);
+    filter: brightness(70%);
+    -webkit-filter: brightness(70%);
+    font-size: 28px;
+}
+
+.dev-tools-icons {
+    margin: 40px;
+}
+
+.tool-icon {
+    color: #242424;
+    width: 70px;
+    height: 70px;
+    font-size: 70px;
+    margin: 30px;
+    transition: .3s;
+}
+
+.tool-icon:hover {
+    transform: scale(.9);
+}
+
+.dev-info.two > h2:nth-child(2) {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.dev-info.two strong {
+    font-weight: 600;
+}
+
+.tool-icon.react {
+    color: #e0e0e0;
+    font-size: 56px;
+    background: #242424;
+    width: 70px;
+    height: 70px;
+    border-radius: 22px;
+    line-height: 74px;
+}
+
+#dev .atom {
+    max-width: 120px;
+}
+
+.atom.dev-one {
+    left: 40px;
+}
+
+.atom.dev-two {
+    right: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+    .dev-info {
+        max-width: 600px;
+    }
+    #dev .atom {
+        max-width: 80px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #dev {
+        height: 700px;
+    }
+    .dev-info {
+        width: 100%;
+    }
+    .dev-info h2 {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    
+    .dev-info > h2:nth-child(2) {
+        font-size: 24px;
+    }
+    .tool-icon {
+        font-size: 60px;
+    }
+    
+    .tool-icon.react {
+        font-size: 48px;
+        width: 68px;
+        height: 68px;
+        line-height: 74px;
+    }
+    #dev .atom {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .dev-info h2 {
+        font-size: 20px;
+    }
+}
