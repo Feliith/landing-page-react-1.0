@@ -1,0 +1,40 @@
+
+#design {
+    width: 100vw;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px 22px;
+}
+
+#design i {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+#design p {
+    font-size: 20px;
+    font-weight: 500;
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#design img {
+    max-width: 400px;
+}
+
+@media screen and (max-width: 800px) {
+    #design {
+        padding: 100px 20px;
+    }
+    #design p {
+        font-size: 18px;
+        max-width: 90%;
+    }
+    #design img {
+        max-width: 300px;
+    }
+}
